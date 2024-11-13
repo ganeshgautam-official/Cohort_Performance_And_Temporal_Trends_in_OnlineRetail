@@ -1,4 +1,4 @@
-"order_month","active_percent_change","new_percent_change"
+"order_month","active_customer_percent_change","new_customer_percent_change"
 "2010-12","0.0","0.0"
 "2011-01","-17.1","-53.1"
 "2011-02","-14.8","-57.1"
