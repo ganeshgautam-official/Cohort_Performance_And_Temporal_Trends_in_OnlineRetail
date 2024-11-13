@@ -42,27 +42,12 @@ GROUP BY
     r.Cohort_Month;
 
 
-
 -- Customer Retention Per Cohort
 CREATE VIEW Customer_Retention AS
     SELECT
         c.Cohort_Month,
         TO_CHAR(s.InvoiceDate, 'YYYY-MM') AS Order_Month,
         COUNT(DISTINCT s.CustomerId) AS Active_Customer
-    FROM
-        CustomerCohorts c 
-    INNER JOIN
-        sales_data s ON c.CustomerId = s.customerid
-    GROUP BY
-        c.cohort_month, Order_Month;
-
-
-
-CREATE VIEW Customer_Retention AS
-    SELECT
-        c.Cohort_Month,
-        TO_CHAR(s.InvoiceDate, 'YYYY-MM') AS Order_Month,
-        COUNT( s.CustomerId) AS Active_Customer
     FROM
         CustomerCohorts c 
     INNER JOIN
@@ -82,7 +67,7 @@ FROM
 SELECT
     r.Cohort_Month,
     r.Order_Month,
-    ROUND((r.Active_Customer::NUMERIC/cohort_customer.Initial_Customer)*100, 2)
+    ROUND((r.Active_Customer::NUMERIC/cohort_customer.Initial_Customer)*100, 2) AS retention_rate
 FROM
     customer_retention r 
 INNER JOIN
@@ -101,7 +86,7 @@ INNER JOIN
 SELECT
     r.Cohort_Month,
     r.Order_Month,
-    ROUND((1 - (r.Active_Customer::NUMERIC/cohort_customer.Initial_Customer))*100, 2)
+    ROUND((1 - (r.Active_Customer::NUMERIC/cohort_customer.Initial_Customer))*100, 2) AS churn_rate
 FROM
     customer_retention r 
 INNER JOIN
