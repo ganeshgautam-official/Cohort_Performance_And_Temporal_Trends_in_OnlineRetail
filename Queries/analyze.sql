@@ -10,7 +10,6 @@ GROUP BY
 
 
 -- Total Revenue Per Cohort
-
 CREATE VIEW RevenueCohort AS
     SELECT
         c.Cohort_Month,
@@ -23,10 +22,13 @@ CREATE VIEW RevenueCohort AS
     GROUP BY
         c.Cohort_Month, Order_Month;
 
+
+--Results
 SELECT
     *
 FROM
     RevenueCohort;
+
 
 -- Average Revenue per each customer
 SELECT
@@ -38,27 +40,6 @@ INNER JOIN
     sales_data s ON r.Cohort_Month = TO_CHAR(s.InvoiceDate, 'YYYY-MM')
 GROUP BY
     r.Cohort_Month;
-
-
--- Customer Life Time Value(CLTV)
-SELECT
-    c.Cohort_Month,
-    ROUND(SUM(r.TotalRevenue)/COUNT(DISTINCT s.CustomerId), 2) AS CLTV
-FROM
-    CustomerCohorts c 
-INNER JOIN
-    sales_data s ON c.Cohort_Month = TO_CHAR(s.InvoiceDate, 'YYYY-MM')
-GROUP BY
-    c.Cohort_Month;
-
-
-
---Results
-SELECT
-    *
-FROM
-    RevenueCohort;
-
 
 
 
@@ -76,6 +57,7 @@ CREATE VIEW Customer_Retention AS
         c.cohort_month, Order_Month;
 
 
+
 CREATE VIEW Customer_Retention AS
     SELECT
         c.Cohort_Month,
@@ -88,11 +70,13 @@ CREATE VIEW Customer_Retention AS
     GROUP BY
         c.cohort_month, Order_Month;
 
+
 --Results
 SELECT
     *
 FROM
     Customer_Retention;
+
 
 -- Retention Rate
 SELECT
