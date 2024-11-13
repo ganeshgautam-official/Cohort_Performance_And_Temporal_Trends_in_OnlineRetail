@@ -1,5 +1,5 @@
 -- Data Cleaning
--- Identify cancelled transactions 
+-- Identify canceled transactions 
 SELECT
     *
 FROM
@@ -8,14 +8,12 @@ WHERE
     InvoiceNo  LIKE 'C%';
 
 
--- Remove cancelled transactions
+-- Remove canceled transactions
 DELETE FROM sales_data
 WHERE InvoiceNo  LIKE 'C%';
 
 
-
-
--- check for duplication
+-- Check for duplication
 SELECT
     *
 FROM
@@ -53,6 +51,7 @@ WHERE
                 WHERE
                     dup_flag > 1);
 
+
 -- Check for NULL in CustomerId
 SELECT
     *
@@ -61,17 +60,20 @@ FROM
 WHERE
     CustomerId is NULL;
 
+
 -- Filter out all rows with NULL customerId
 DELETE FROM sales_data
 WHERE  CustomerId is NULL;
 
- -- Check for records with 0 unitprice
+
+ -- Check for records with 0 unit price
 SELECT
     *
 FROM
     sales_data
 WHERE
     UnitPrice = 0;
+
 
 -- Filter out all rows with 0 UnitPrice
 DELETE FROM sales_data
