@@ -1,4 +1,4 @@
-"cohort_month","order_month","?column?"
+"cohort_month","order_month","churn_customer"
 "2010-12","2010-12","0"
 "2010-12","2011-01","562"
 "2010-12","2011-02","598"
