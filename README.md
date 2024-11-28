@@ -89,10 +89,53 @@ For this project, the transactional data from the CSV file is stored in a relati
 The SQL code for the data cleaning process can be found in the file [cleaning_transformation.sql](https://github.com/ganeshgautam-official/Cohort_Performance_And_Temporal_Trends_in_OnlineRetail/blob/main/Queries/cleaning_transformation.sql). This file contains all the necessary SQL queries for removing cancellations, duplicates, and invalid entries to ensure the dataset is cleaned and ready for analysis.
 
 
+### **4. Analyze**
+This section outlines the steps of analysis performed to assess cohort performance and temporal trends for UK-based online retailers. The goal is to evaluate customer retention, churn rates, total revenue per cohort, and key temporal trends such as new customer acquisition and changes in active customer counts. The following steps were used to extract and calculate insights from the data and the code for SQL queries for the analysis process can be found in the file [analyze.sql](https://github.com/ganeshgautam-official/Cohort_Performance_And_Temporal_Trends_in_OnlineRetail/blob/main/Queries/analyze.sql).
 
+#### **1. Cohort Performance Analysis**
+Cohort analysis provides insights into customer retention and behavior over time, enabling an understanding of how different customer groups (cohorts) contribute to overall revenue and engagement. The code for SQL queries for Cohort Performance Analysis can be found in the file [analyze.sql](https://github.com/ganeshgautam-official/Cohort_Performance_And_Temporal_Trends_in_OnlineRetail/blob/main/Queries/analyze.sql).
 
+- **Monthly Cohort Assignment**:  
+  Customers are grouped into cohorts based on the month of their first purchase (`Cohort_Month`). This is calculated by identifying the minimum transaction date for each customer and extracting the year and month.
 
+- **Total Revenue Per Cohort**:  
+  The total revenue for each cohort is calculated by summing the product of `Quantity` and `UnitPrice` for all transactions made by customers within each cohort, grouped by cohort and transaction month.
 
+- **Average Revenue per Customer**:  
+  For each cohort, the average revenue per customer is calculated as the total revenue for the cohort divided by the number of unique customers in that cohort.
+
+- **Customer Retention Per Cohort**:  
+  Retention is measured by counting the number of unique customers from each cohort who make purchases in subsequent months. This is grouped by `Cohort_Month` and `Order_Month`.
+
+- **Retention Rate**:  
+  The retention rate is calculated as the percentage of customers in a cohort who make purchases in a specific month. It is derived as:  
+  **Retention Rate (%) = (Active Customers in Month / Initial Customers in Cohort) × 100**
+
+- **Churn Rate**:  
+  Churn rate measures the percentage of customers who stop making purchases. It is calculated as:  
+  **Churn Rate (%) = 100 - Retention Rate (%)**
+
+---
+
+#### **2. Temporal Trends Analysis**
+Temporal trends provide insights into how key metrics evolve over time, helping assess customer engagement, revenue trends, and business performance. These metrics were calculated 
+
+- **Key Metrics Analyzed**:
+  - **Total Revenue**: Calculated as the sum of `Quantity × UnitPrice` for all transactions in each month. This measures the overall revenue generated over time.
+  - **Active Customers**: The count of unique customers who made purchases in each month. This reflects customer engagement and activity trends.
+  - **New Customer Acquisition**: The count of customers making their first purchase in each month. This metric tracks growth in the customer base.
+
+- **Percentage Change**:  
+  For each metric, the percentage change from the starting month is calculated using **calculated fields in Tableau** as:  
+  **Percentage Change (%) = ((Current Month Value - Starting Month Value) / Starting Month Value) × 100**
+
+ All these key metrics are calculated using **calculated fields in Tableau**, leveraging the cleaned dataset.
+
+By comparing these metrics month-over-month, temporal trends highlight areas of growth or decline, seasonal patterns, and the effectiveness of marketing or customer retention strategies.
+
+---
+
+This analysis provides a detailed view of customer cohorts, retention, and revenue generation over time. Results are visualized through an interactive Tableau dashboard, enabling further exploration and actionable insights for strategic decision-making.
 
 
 
