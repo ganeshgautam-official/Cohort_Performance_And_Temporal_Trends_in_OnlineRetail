@@ -39,8 +39,31 @@ Customer retention and revenue growth are vital for any online retailer to thriv
 #### **Data Source**
 The dataset is a transactional record from a UK-based non-store online retailer, covering transactions between December 1, 2010, and December 9, 2011. The retailer primarily sells unique all-occasion gifts, and many customers are wholesalers. This dataset is publicly available on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/352/online+retail).
 
+
+
 #### **Data Structure**
 
+| **Variable Name** | **Type**           | **Description**                                             | **Units** |
+|--------------------|--------------------|-------------------------------------------------------------|----------|
+| `InvoiceNo`        | Categorical (ID)    | Unique 6-digit identifier for each transaction. Starts with 'C' for cancellations. | -        |
+| `StockCode`        | Categorical (ID)    | Unique 5-digit identifier for each product.                | -        |
+| `Description`      | Categorical         | Product name.                                              | -        |
+| `Quantity`         | Integer             | Number of units purchased per transaction.                 | -        |
+| `InvoiceDate`      | Date/Time           | Date and time when the transaction occurred.               | -        |
+| `UnitPrice`        | Continuous          | Price per unit in sterling (GBP).                          | GBP      |
+| `CustomerID`       | Categorical (ID)    | Unique 5-digit identifier for each customer.               | -        |
+| `Country`          | Categorical         | Country where the customer resides.                        | -        |
+
+---
+
+##### **Key Notes**
+
+- **Timeframe**: Covers 1 year of transactions.
+- **Special Records**: Cancellations are indicated by `InvoiceNo` starting with "C."
+- **No Missing Values**: All fields are fully populated, simplifying the cleaning process.
+- **Potential Insights**: The dataset enables cohort analysis, customer segmentation, and revenue trends exploration, ideal for clustering and classification tasks.
+
+This dataset forms the foundation for exploring customer retention, churn rates, and revenue generation trends.
 
 
 
