@@ -66,7 +66,7 @@ The dataset is a transactional record from a UK-based non-store online retailer,
 This dataset forms the foundation for exploring customer retention, churn rates, and revenue generation trends.
 
 #### **Data Storage**
-For this project, the transactional data from the CSV file is stored in a relational database, which provides an efficient way to manage, query, and clean large datasets. The data is loaded into two tables within the database and the SQL code for the database creation and loading  can be found in the file [create_load.sql]()
+For this project, the transactional data from the CSV file is stored in a relational database, which provides an efficient way to manage, query, and clean large datasets. The data is loaded into two tables within the database and the SQL code for the database creation and loading  can be found in the file [create_load.sql](https://github.com/ganeshgautam-official/Cohort_Performance_And_Temporal_Trends_in_OnlineRetail/blob/main/Queries/create_load.sql)
 
 1. **sales_data_raw**: This table stores the raw data directly from the CSV file without any modifications. It serves as the backup table and ensures the original dataset is preserved for reference or reprocessing.
 
@@ -86,7 +86,7 @@ For this project, the transactional data from the CSV file is stored in a relati
 - **Remove Null Customer IDs**: Filtered out rows where CustomerID was NULL, ensuring only valid customer data remains.
 - **Remove Records with Zero UnitPrice**: Deleted records where UnitPrice was 0, indicating invalid or free transactions.
   
-The SQL code for the data cleaning process can be found in the file [cleaning_transformation.sql](). This file contains all the necessary SQL queries for removing cancellations, duplicates, and invalid entries to ensure the dataset is cleaned and ready for analysis.
+The SQL code for the data cleaning process can be found in the file [cleaning_transformation.sql](https://github.com/ganeshgautam-official/Cohort_Performance_And_Temporal_Trends_in_OnlineRetail/blob/main/Queries/cleaning_transformation.sql). This file contains all the necessary SQL queries for removing cancellations, duplicates, and invalid entries to ensure the dataset is cleaned and ready for analysis.
 
 
 
