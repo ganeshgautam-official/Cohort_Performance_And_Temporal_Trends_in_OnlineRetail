@@ -135,7 +135,7 @@ By comparing these metrics month-over-month, temporal trends highlight areas of 
 
 ---
 
-This analysis provides a detailed view of customer cohorts, retention, and revenue generation over time. Results are visualized through an interactive Tableau dashboard, enabling further exploration and actionable insights for strategic decision-making.
+
 
 
 
