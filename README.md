@@ -14,25 +14,69 @@ The results are presented through an interactive [Tableau dashboard](https://pub
 
 
 ### **1. Business Case**
-Customer retention and revenue growth are vital for any online retailer to thrive in a competitive market. This analysis evaluates customer behavior through cohort performance and temporal trends, providing actionable insights into retention, churn, and revenue generation. Using transactional data from a UK-based retailer, the project aims to:
 
-1. **Analyze Customer Retention and Churn**:
-- Measure retention rates and identify factors driving customer churn.
-- Highlight opportunities to improve customer loyalty.
+#### Overview  
+The retailer specializes in occasional gifts and primarily serves wholesalers. To remain competitive, the business aims to improve customer retention, optimize resource allocation for marketing, and maximize revenue generation. The retailer lacks an effective method to monitor key metrics such as revenue trends, customer retention, acquisition, and churn. With a limited budget for marketing and engagement activities, there is a need to identify high-value customers and develop strategies to retain them while addressing churn for at-risk customers.  
 
+---
 
+#### Business Problem  
+The absence of a comprehensive system to analyze customer and revenue trends has made it difficult for the retailer to:  
+- Identify key customer groups that contribute the most to revenue.  
+- Allocate marketing resources effectively to retain high-value customers.  
+- Reduce customer churn by engaging with at-risk segments.  
+- Understand and respond to customer feedback to improve product offerings.  
 
-2. **Evaluate Revenue Contribution by Cohort**:
-- Identify high-value customer cohorts and assess spending patterns.
-- Inform strategies to optimize resources for key segments.
+This insight gap restricts the retailer’s ability to strategically plan customer engagement initiatives, maximize revenue, and improve customer satisfaction.  
 
+---
 
+#### Objectives  
+The retailer seeks to develop a dashboard that addresses the following business needs:  
 
-3. **Track Temporal Performance**:
-- Examine monthly trends in total revenue, active customers, and new customer acquisition.
-- Monitor percentage changes over time to assess growth or decline.
-- Results are presented in an interactive Tableau dashboard, offering stakeholders a clear view of customer engagement and business performance to support data-driven decision-making.
+**Monitor Temporal Trends**:  
+- **Revenue Trends**: Track monthly revenue generation from December 2010 to December 2011.  
+- **Customer Acquisition**: Analyze the number of new customers acquired each month.  
+- **Customer Retention and Churn**: Assess the number of customers retained and churned each month.  
 
+**Customer Segmentation and Prioritization**:  
+- Identify high-value customer cohorts who generate significant revenue and engage with them through exclusive discounts and early access to new products.  
+- Recognize churn-prone customers who disengage early and develop strategies to retain them, such as offering personalized engagement or gathering feedback.  
+
+**Actionable Insights for Marketing**:  
+- Ensure limited marketing budgets are allocated effectively by focusing on:  
+  - Retaining high-value customers.  
+  - Re-engaging churn-prone customers.  
+
+**Customer Feedback and Engagement**:  
+- Implement feedback mechanisms for churn-prone customers through email and messaging to understand their needs and expectations.  
+
+**Group-Level Metrics**:  
+- Provide insights into revenue, retention, and customer acquisition across customer cohorts to evaluate performance on a monthly basis.  
+
+---
+
+#### Questions to be Addressed by the Dashboard  
+
+**Revenue and Acquisition**:  
+- What is the monthly revenue generated from December 2010 to December 2011?  
+- How many new customers were acquired in each month?  
+
+**Retention and Churn**:  
+- How many customers are retained each month across cohorts?  
+- What are the churn rates for each customer cohort?  
+
+**Customer Segmentation**:  
+- Which customer groups contribute the most to revenue?  
+- Which customer groups disengage quickly, and what steps can be taken to retain them?  
+
+**Marketing Focus**:  
+- How can the retailer best allocate limited resources to maximize revenue and retention?  
+- Which customers should be prioritized for exclusive offers and new product access?  
+- How can the retailer engage churn-prone customers more effectively?  
+
+**Feedback and Product Improvement**:  
+- How can customer feedback be collected and utilized to improve product offerings and customer engagement?  
 
 ### **2. Data Preparation**
 #### **Data Source and Structure**
@@ -134,6 +178,12 @@ Temporal trends provide insights into how key metrics evolve over time, helping 
 By comparing these metrics month-over-month, temporal trends highlight areas of growth or decline, seasonal patterns, and the effectiveness of marketing or customer retention strategies.
 
 ---
+
+
+### **4. Key Insights**
+#### **1. Revenue Contribution by Cohort**
+
+
 
 
 
