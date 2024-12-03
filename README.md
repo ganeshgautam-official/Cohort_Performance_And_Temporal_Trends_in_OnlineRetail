@@ -1,14 +1,21 @@
 # Cohort_Performance_And_Temporal_Trends_in_OnlineRetail
-### Project Overview   
-This project analyzes **cohort performance** and **temporal trends** in online retail to evaluate customer retention, churn rates, and revenue generation. Using transactional data from a UK-based online retailer, the analysis provides insights into customer behavior over time through the following:
+### Project Overview  
+This project focuses on evaluating **cohort performance** and **temporal trends** in online retail to address key business challenges related to customer retention, churn, and revenue generation. Using transactional data from a UK-based retailer specializing in occasional gifts for wholesalers, the analysis provides actionable insights into customer behavior through the following:  
 
-- **Cohort Performance**: A detailed comparison of cohort-wise **retention rates**, **total revenue**, and **active customers**. This analysis identifies patterns in customer retention across different cohorts and evaluates how various customer groups contribute to overall revenue and active customer counts.
+- **Cohort Performance**:  
+  - Detailed analysis of **retention rates**, **revenue contribution**, and **active customer counts** across customer cohorts.  
+  - Identification of high-value customer groups who generate significant revenue and at-risk customers prone to early churn.  
+  - Evaluation of patterns in customer engagement and their contribution to monthly revenue.  
 
-- **Temporal Trends**: Examination of key metrics such as **Total Revenue**, **Active Customers**, and **New Customer Acquisition** over each month. The analysis also tracks percentage changes in these metrics from the starting month, providing a clear picture of growth or decline over time.
+- **Temporal Trends**:  
+  - Analysis of key metrics such as **Monthly Revenue**, **New Customer Acquisition**, and **Customer Retention vs. Churn** from December 2010 to December 2011.  
+  - Tracking trends in these metrics over time to identify growth opportunities and areas needing improvement.  
 
-The results are presented through an interactive [Tableau dashboard](https://public.tableau.com/app/profile/ganesh.gautam7819/viz/CohortPerformanceTemporalTrendsinOnlineRetail/Cohort_Analysis_Online_Retail) that visualizes these trends, offering a comprehensive view of the retailer’s performance in terms of customer retention, revenue growth, and active customer engagement.
+The results of the analysis are presented through an interactive [Tableau dashboard](https://public.tableau.com/app/profile/ganesh.gautam7819/viz/CohortPerformanceTemporalTrendsinOnlineRetail/Cohort_Analysis_Online_Retail), which provides:  
+- A clear visualization of revenue trends, customer engagement, and cohort performance.  
+- Insights to guide resource allocation, marketing efforts, and customer retention strategies.  
 
-
+This project equips the retailer with a data-driven approach to prioritize high-value customers, re-engage at-risk segments, and optimize marketing efforts to maximize revenue and improve customer satisfaction.  
 
 
 
@@ -20,7 +27,7 @@ The retailer specializes in occasional gifts and primarily serves wholesalers. T
 
 ---
 
-#### Business Problem  
+#### Problem  
 The absence of a comprehensive system to analyze customer and revenue trends has made it difficult for the retailer to:  
 - Identify key customer groups that contribute the most to revenue.  
 - Allocate marketing resources effectively to retain high-value customers.  
@@ -52,7 +59,7 @@ The retailer seeks to develop a dashboard that addresses the following business 
 - Implement feedback mechanisms for churn-prone customers through email and messaging to understand their needs and expectations.  
 
 **Group-Level Metrics**:  
-- Provide insights into revenue, retention, and customer acquisition across customer cohorts to evaluate performance on a monthly basis.  
+- Provide insights into revenue, retention, and customer acquisition across customer cohorts to evaluate performance monthly.  
 
 ---
 
@@ -60,7 +67,8 @@ The retailer seeks to develop a dashboard that addresses the following business 
 
 **Revenue and Acquisition**:  
 - What is the monthly revenue generated from December 2010 to December 2011?  
-- How many new customers were acquired in each month?  
+- How many new customers were acquired in each month?
+- How many active customers made purchases each month?
 
 **Retention and Churn**:  
 - How many customers are retained each month across cohorts?  
@@ -76,7 +84,8 @@ The retailer seeks to develop a dashboard that addresses the following business 
 - How can the retailer engage churn-prone customers more effectively?  
 
 **Feedback and Product Improvement**:  
-- How can customer feedback be collected and utilized to improve product offerings and customer engagement?  
+- From which customer segments should feedback be collected to identify key issues and make improvements, particularly focusing on those with high churn rates in successive months?  
+
 
 ### **2. Data Preparation**
 #### **Data Source and Structure**
