@@ -190,13 +190,30 @@ By comparing these metrics month-over-month, temporal trends highlight areas of 
 
 
 ### **4. Key Insights**
-#### **1. Revenue Contribution by Cohort**
+#### **1. Revenue, Acquisition, and Active Customer Trends**
+![Monthly Trends Dashboard](images/monthly_trends_dashboard.png)
+
+- Monthly revenue has steadily increased over time.
+- Active customers are growing consistently.
+- Customer Acquisitions exhibit a fluctuating pattern with a noticeable decline in recent months.
 
 
+#### **2. Retention and Churn**
+![Monthly Trends Dashboard](images/monthly_trends_dashboard.png)
+
+- Retention rates are highest during the initial months for all cohorts, then decline over time.
+- Cohort 2010-12 stands out as the most retained cohort, with 50% retention in November 2011 and ending the year at 26% retention, far above other cohorts.
+- Churn rates show an inverse pattern, with most churn happening early in the lifecycle.
 
 
+#### **2. Customer Segments**
+![Monthly Trends Dashboard](images/monthly_trends_dashboard.png)
 
+- Cohort 2010-11(Customers who made their first purchase in December 2010) contribute nearly 50% of total revenue ($4,093k) to date making them a pivotal group for long-term profitability.
+- Customer segment May 2011 has a high average revenue per user (ARPU), despite fewer active customers and higher churn rates. Their revenue increased from $113k at acquisition to $173k by December 2011, indicating strong spending behavior among a small base.
+- Customer segments in October 2011 and November 2011 show high initial churn within a short time interval. These groups disengage quickly.
 
+#### **2. Recommendations**
 
 
 
