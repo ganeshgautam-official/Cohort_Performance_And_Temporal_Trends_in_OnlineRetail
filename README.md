@@ -165,7 +165,7 @@ Cohort analysis provides insights into customer retention and behavior over time
   **Retention Rate (%) = (Active Customers in Month / Initial Customers in Cohort) × 100**
 
 - **Churn Rate**:  
-  Churn rate measures the percentage of customers who stop making purchases. It is calculated as:  
+  The churn rate measures the percentage of customers who stop making purchases. It is calculated as:  
   **Churn Rate (%) = 100 - Retention Rate (%)**
 
 ---
@@ -190,6 +190,7 @@ By comparing these metrics month-over-month, temporal trends highlight areas of 
 
 
 ### **4. Key Insights**
+Here’s the dashboard for the retailer system that helps track key performance indicators (KPIs) and segment customers for revenue, retention, and churn analysis. Explore the dashboard here: [Cohort Performance and Temporal Trends](https://github.com/ganeshgautam-official/Cohort_Performance_And_Temporal_Trends_in_OnlineRetail/blob/main/Queries/analyze.sql).
 #### **1. Revenue, Acquisition, and Active Customer Trends**
 ![Monthly Trends Dashboard](images/monthly_trends_dashboard.png)
 
@@ -213,7 +214,15 @@ By comparing these metrics month-over-month, temporal trends highlight areas of 
 - Customer segment May 2011 has a high average revenue per user (ARPU), despite fewer active customers and higher churn rates. Their revenue increased from $113k at acquisition to $173k by December 2011, indicating strong spending behavior among a small base.
 - Customer segments in October 2011 and November 2011 show high initial churn within a short time interval. These groups disengage quickly.
 
-#### **2. Recommendations**
+### **5. Recommendations**
+- **Engage high-value customer segments, such as December 2010 and May 2011**, with exclusive discounts, early access to new products, and loyalty programs.
+- **Develop personalized engagement strategies to retain churn-prone customer segments**, particularly for  **October 2011 and November 2011**.
+- **Allocate 70% of the marketing budget to loyalty programs targeting high-value customer segments**, focusing on **December 2010 and May 2011** to maximize retention and revenue.
+- **Allocate 30% of the marketing budget to targeted re-engagement campaigns for churn-prone customer segments**, especially for **October 2011 and November 2011**.
+- **Implement targeted feedback mechanisms to understand the needs and expectations of recent customer segments**, particularly **October 2011 and November 2011 segments**, to enhance retention and engagement.
+
+
+
 
 
 
