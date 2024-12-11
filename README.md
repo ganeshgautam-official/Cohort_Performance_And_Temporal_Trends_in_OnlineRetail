@@ -192,7 +192,7 @@ By comparing these metrics month-over-month, temporal trends highlight areas of 
 ### **4. Key Insights**
 Here’s the dashboard for the retailer system that helps track key performance indicators (KPIs) and segment customers for revenue, retention, and churn analysis. Explore the dashboard here: [Cohort Performance and Temporal Trends](https://github.com/ganeshgautam-official/Cohort_Performance_And_Temporal_Trends_in_OnlineRetail/blob/main/Queries/analyze.sql).
 #### **1. Revenue, Acquisition, and Active Customer Trends**
-![Monthly Trends Dashboard](images/monthly_trends_dashboard.png)
+![Monthly Trends Dashboard](visuals/KPIs.png)
 
 - Monthly revenue has steadily increased over time.
 - Active customers are growing consistently.
@@ -200,7 +200,7 @@ Here’s the dashboard for the retailer system that helps track key performance 
 
 
 #### **2. Retention and Churn**
-![Monthly Trends Dashboard](images/monthly_trends_dashboard.png)
+![Monthly Trends Dashboard](visuals/Retention-and-Churn.png)
 
 - Retention rates are highest during the initial months for all cohorts, then decline over time.
 - Cohort 2010-12 stands out as the most retained cohort, with 50% retention in November 2011 and ending the year at 26% retention, far above other cohorts.
@@ -208,7 +208,7 @@ Here’s the dashboard for the retailer system that helps track key performance 
 
 
 #### **2. Customer Segments**
-![Monthly Trends Dashboard](images/monthly_trends_dashboard.png)
+![Monthly Trends Dashboard](visuals/Revenue-by-customer-segments.png)
 
 - Cohort 2010-11(Customers who made their first purchase in December 2010) contribute nearly 50% of total revenue ($4,093k) to date making them a pivotal group for long-term profitability.
 - Customer segment May 2011 has a high average revenue per user (ARPU), despite fewer active customers and higher churn rates. Their revenue increased from $113k at acquisition to $173k by December 2011, indicating strong spending behavior among a small base.
